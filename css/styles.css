@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=League+Spartan:wght@400;500;600;700&display=swap');
+
+:root {
+    --header-height: 4rem;
+
+    /*=========Colors===========*/
+    /* Color mode HSL(hue, saturation, lightness) */
+    --first-color: hsl(176, 88%, 27%);
+    --first-color-alt: hsl(129, 44%, 94%);
+    --second-color: hsl(34, 94%, 87%);
+    --title-color: hsl(0, 0%, 13%);
+    --text-color: hsl(154, 13%, 32%);
+    --text-color-light: hsl(60, 1%, 56%);
+    --body-color: hsl(0, 0%, 93%);
+    --container-color: hsl(0, 0%, 93%);
+    --border-color: hsl(129, 36%, 85%);
+    --border-color-alt: hsl(113, 15%, 90%);
+
+    /*=======Font and Typography=======*/
+    /* .5rem = 8px | 1rem = 16px   */
+    --body-font: 'Lato', sans-serif;
+    --second-font: 'League Spartan', sans-serif;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.75rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.375rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.75rem;
+    --tiny-font-size: 0.6875rem;
+
+
+    /*=========Font Weight ======*/
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+
+    /*========Transition=======*/
+    --transition: cubic-bezier(0, 0, 0.05, 1);
+
+    /* UTILITIES */
+    .divider {
+        width: 100%;
+        height: 5rem;
+
+    }
+
+    /*Responsive typography */
+    @media screen and (max-width: 1200px) {
+        .divider {
+            width: 100%;
+            height: 4rem;
+
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .divider {
+            width: 100%;
+            height: 3rem;
+
+        }
+
+        .content-text {
+            font-size: var(--h4-font-size);
+        }
+
+        .content {
+            height: 1rem;
+        }
+
+        .cut-this-way {
+            display: none;
+        }
+
+        .m-4 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+
+        .divider {
+            width: 100%;
+            height: 2.5rem;
+
+        }
+
+        .content-text {
+            font-size: var(--large-font-size);
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+        .divider {
+            width: 100%;
+            height: 2rem;
+
+        }
+
+        .content-text {
+            font-size: var(--normal-font-size);
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1rem;
+
+        }
+
+        .content-text {
+            font-size: var(--normal-font-size);
+            text-align: center;
+
+        }
+
+        .content {
+            width: 100%;
+            height: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 7rem;
+        }
+
+        #demo {
+            margin-bottom: 0px;
+            /* Adjust the margin value as needed */
+        }
+    }
+
+    .divider {
+        width: 100%;
+        height: 1rem;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    input,
+    text-area,
+    body {
+        color: var(--text-color);
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        font-weight: var(--weight-400);
+    }
+
+    body {
+        background-color: var(--body-color);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--second-font);
+        color: var(--title-color);
+        font-weight: var(--weight-600);
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    button,
+    textarea,
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}
+
+.logo-img {
+    width: 5rem;
+}
+
+.content {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.content-text {
+    font-size: var(--h3-font-size);
+}
+
+.nav-item .icon {
+    color: aliceblue;
+    width: auto;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 9px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* < !-- The slideshow/carousel --> */
+
+.parent-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    /* height: 100vh; */
+    /* Optional: Set the parent container to the full viewport height */
+}
+
+
+/* < !-- CAROUSEL OF IMAGES --> */
+
+
+
+.parent-container-2 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+}
+
+.carousel-container {
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+
+.buttons-holder {
+
+    margin-bottom: 2rem;
+    display: flex;
+    /* Use flexbox */
+    justify-content: flex-start;
+
+    /* Distribute space evenly between buttons */
+}
+
+.button-pro {
+    /* Your button styles here */
+    padding: 10px 20px;
+    margin-right: 1rem;
+    background-color: var(--first-color);
+    /* Adjust padding as needed */
+}
+
+
+/* < !-- TEST CASE --> */
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.card-container {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    /* Adjust the gap between cards as needed */
+    white-space: nowrap;
+    /* Prevent cards from wrapping to the next row */
+}
+
+.card {
+    flex: 0 0 auto;
+
+    /* Allow cards to have a fixed width */
+    /* Your card styles here */
+    position: relative;
+}
+
+.bi-suit-heart-fill {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.image-gallery {
+    margin-bottom: 5rem;
+}
+
+/* TWO_SECTION */
+
+
+
+.label-above {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: var(--h1-font-size);
+    font-weight: var(--weight-700);
+}
+
+
+
+
+.responsive1 {
+    width: 25rem;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.cart-item {
+    width: 450px;
+}
+
+.checkitemout {
+    align-items: center;
+}
+
+.checkout {
+    color: #01070e;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}

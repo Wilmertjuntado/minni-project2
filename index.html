@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two Fits</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- START OF NAV  -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="logo-img" src="./images/Logo-store.webp"
+          alt="Two Fits Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="Shop NowcollapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link icon" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon" href="./my-html/all-products.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon" href="Shop Now">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./my-html/cart.html">
+              <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAV -->
+
+  <div class="content">
+    <h3 class="content-text">
+      Hop In, Enjoy 10.10 discounts with our New Arrival shoes!
+    </h3>
+  </div>
+
+  <!-- Carousel -->
+  <div class="parent-container">
+    <div id="demo" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="Shop Nowdemo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="Shop Nowdemo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="Shop Nowdemo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/abstract-design-mountain-backdrop-generated-by-ai.webp" alt="Design by: Aldous"
+            class="d-block w-80 img-fluid" />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>
+              Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/modern-sports-shoe-design-abstract-motion-generated-by-ai.webp" alt="Design by: Aldous"
+            class="d-block w-80 img-fluid" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>
+              Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/sneaker-that-has-word-nike-it.webp" alt="Design by: Aldous"
+            class="d-block w-80 img-fluid" />
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="Shop Nowdemo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="Shop Nowdemo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- CAROUSEL OF IMAGES -->
+  <div class="image-gallery">
+    <div class="parent-container-2">
+      <div class="carousel-container">
+        <div class="buttons-holder">
+          <button class="button-pro">10.10 Sale</button>
+          <button class="button-pro">New Arrivals</button>
+          <button class="button-pro">Iconic</button>
+        </div>
+
+        <div class="card-container">
+          <div class="card" style="width:300px">
+            <img class="scroll-image responsive card-img-top" src="./images/blue1.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Blue Artisan</h4>
+              <p class="card-text">
+                &#8369; 2536
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/blue2.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Sky Dance</h4>
+              <p class="card-text">
+                &#8369; 3122
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/cyan1.png" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Mcbeth Blue</h4>
+              <p class="card-text">
+                &#8369; 3879
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/cyan2.png" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Light Dusk</h4>
+              <p class="card-text">
+                &#8369; 5100
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/green1.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Green Hornet</h4>
+              <p class="card-text">
+                &#8369; 5236
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/green2.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Maple Green</h4>
+              <p class="card-text">
+                &#8369; 3411
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/obsidian1.png" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Marble White</h4>
+              <p class="card-text">
+                &#8369; 4750
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/orange1.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Neo Light</h4>
+              <p class="card-text">
+                &#8369; 8750
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/orange2.png" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Tangerine Isle</h4>
+              <p class="card-text">
+                &#8369; 4760
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" data-product-id='1'>Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/purple1.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Delube Grey</h4>
+              <p class="card-text">
+                &#8369; 5470
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" id="viewProducts">Shop Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px">
+            <img class="scroll-image responsive card-img-top" src="./images/purple2.webp" alt="shoe" />
+            <i class="bi bi-suit-heart-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Resistance Purple</h4>
+              <p class="card-text">
+                &#8369; 6300
+              </p>
+              <a href="./my-html/all-products.html" class="btn btn-primary add-to-cart" id="viewProducts">Shop Now</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- TWO-SECTION -->
+  <div class="container-fluid ms-4 mb-4 bg-light">
+    <div class="label-above">Special Project</div>
+
+    <div class="row">
+
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card-1 text-bg-light">
+          <img src="./images/green1.webp" class="card-img css-card-img" alt="Namikian shoe">
+
+          <h4 class="card-title p-3">The Namikian Project</h4>
+          <p class="card-text p-3">The Namikian Project blurred the lines between fashion and fantasy,
+            offering wearers a chance to express their love for
+            Dragon Ball while turning heads with unique, Namikian-inspired footwear. <span class="cut-this-way">It
+              showcased the potential of
+              fashion to tell a
+              story and transport fans into the enchanting world of Dragon Ball, leaving an indelible mark on the
+              fashion industry as
+              a symbol of creative ingenuity and cultural fusion.</span></p>
+          <a href="./my-html/all-products.html" class="btn btn-primary m-2">See more</a>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card-1 text-bg-light">
+          <img src="./images/purple2.webp" class="card-img css-card-img" alt="Purple shoe pb-4">
+
+          <h4 class="card-title p-3">The Blue Speckter</h4>
+          <p class="card-text p-3">"The Blue and the Ube" marked an extraordinary collaboration that bridged the realms
+            of
+            fashion and culinary art.<span class="cut-this-way"> This
+              project brought a prominent shoe designer together with the vibrant colors and flavors of blueberries
+              and
+              ube, a purple
+              yam. The goal was to create a line of shoes that not only embodied the visual
+              appeal of these
+              ingredients
+              but also
+              celebrated their cultural significance.</span></p>
+          <a href="./my-html/all-products.html" id="viewProducts" class="btn btn-primary m-2">See more</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="Shop Now">about us</a></li>
+            <li><a href="Shop Now">our services</a></li>
+            <li><a href="Shop Now">privacy policy</a></li>
+            <li><a href="Shop Now">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="Shop Now">FAQ</a></li>
+            <li><a href="Shop Now">shipping</a></li>
+            <li><a href="Shop Now">returns</a></li>
+            <li><a href="Shop Now">order status</a></li>
+            <li><a href="Shop Now">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="Shop Now">watch</a></li>
+            <li><a href="Shop Now">bag</a></li>
+            <li><a href="Shop Now">shoes</a></li>
+            <li><a href="Shop Now">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="Shop Now"><i class="fab fa-facebook-f"></i></a>
+            <a href="Shop Now"><i class="fab fa-twitter"></i></a>
+            <a href="Shop Now"><i class="fab fa-instagram"></i></a>
+            <a href="Shop Now"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <script src="./src/all-call.js"></script>
+  <script src="all-call.js"></script>
+  <script src="./shoppingCart.js" type="module"></script>
+</body>
+
+</html>
